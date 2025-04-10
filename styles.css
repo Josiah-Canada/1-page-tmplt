@@ -12,7 +12,6 @@ body {
     background-image: url(pink-rose.jpg);
     background-size: cover;
     background-position: center;
-    font-family: pacifico
 }
 
 nav {
@@ -30,6 +29,7 @@ nav ul {
 
 nav li {
     height: 50px;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 nav a {
@@ -80,6 +80,29 @@ nav li:first-child{
 
 .menu-button {
     display: none;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: pacifico;
+    font-weight: lighter;
+}
+
+.sub-heading{
+    font-size: 3em;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.center-text {
+    display: flext;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
 }
 
 @media(max-width: 800px) {
