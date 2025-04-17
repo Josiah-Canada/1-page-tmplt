@@ -1,121 +1,156 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 #hero {
-    min-height: 100vh;
-    background-image: url(pink-rose.jpg);
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  background-image: url(images/pink-rose.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 nav {
-    background-color: rgb(124, 200, 91);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  background-color: rgb(124, 200, 91);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav li {
-    height: 50px;
-    font-family: "Josefin Sans", sans-serif;
+  height: 50px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 nav a {
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
 }
 
 nav a:hover {
-    text-shadow:2px 2px rgba(252, 156, 225, 0.85);
+  text-shadow: 2px 2px 2px rgba(252, 156, 225, 0.85);
 }
 
-nav li:first-child{
-    margin-right: auto;
-    font-family: pacifico
+nav li:first-child {
+  margin-right: auto;
+  font-family: pacifico;
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index:999;
-    background-color: rgba(252, 156, 225, 0.50);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(252, 156, 225, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .sidebar a:hover {
-    text-shadow: 2px 2px  rgba(124, 200, 91, 0.85);
+  text-shadow: 2px 2px rgba(124, 200, 91, 0.85);
 }
 
 .sidebar li {
-    width: 100%;
+  width: 100%;
 }
 
 .sidebar a {
-    width: 100%;
+  width: 100%;
 }
 
 .menu-button {
-    display: none;
+  display: none;
 }
 
 h1 {
-    font-size: 5em;
-    font-family: pacifico;
-    font-weight: lighter;
+  font-size: 5em;
+  font-family: pacifico;
+  font-weight: lighter;
 }
 
-.sub-heading{
-    font-size: 3em;
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+.sub-heading {
+  font-size: 3em;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .center-text {
-    display: flext;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    align-content: center;
-    text-align: center;
+  display: flext;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  align-content: center;
+  text-align: center;
 }
 
-@media(max-width: 800px) {
-.hideOnMobile {
+#about {
+  background-color: rgb(245, 128, 212);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 15px auto;
+  width: 70%;
+}
+
+.abt-img {
+  border-radius: 5%;
+  /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.30); */
+  border: outset 3px rgb(161, 228, 132);
+  margin: 10px;
+  float: left;
+}
+
+/* changing font families */
+.abt-heading {
+  font-family: pacifico;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.abt-subheading {
+  font-family: josefin sans;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
     display: none;
-}
-.menu-button {
+  }
+  .menu-button {
     display: block;
-}
+  }
 }
 
-@media(max-width:400px) {
-    .sidebar {
-        width: 100%;
-    }
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
 }
