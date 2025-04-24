@@ -1,64 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Pacifico&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beau florist</title>
+  
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@200..800&family=Pacifico&family=Playwrite+DE+SAS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    
+    
+  </head>
+  <body>
     <section id="nav">
-        <nav>
-            <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><img src="./svgs/close.svg" alt="close"></a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">contacts</a></li>
-            </ul>
-          
-            <ul>
-                <li><a href="#">Beau florist</a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
-                <li class="hideOnMobile"><a href="#">Products</a></li>
-                <li class="hideOnMobile"><a href="#">contacts</a></li>
-                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="./svgs/menu.svg" alt="menu"></a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"><img src="./svgs/close.svg" alt="close" /></a>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">contacts</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="#">Beau florist</a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="hideOnMobile"><a href="#">Products</a></li>
+          <li class="hideOnMobile"><a href="#">contacts</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#"><img src="./svgs/menu.svg" alt="menu" /></a>
+          </li>
+        </ul>
+      </nav>
     </section>
     <section id="hero">
-<div class="center-text">
-    <h1>Beau florist</h1>
-    <h2 class="sub-heading">we do flowers right</h2>
-</div>
+      <div class="center-text">
+        <h1>Beau florist</h1>
+        <h2 class="sub-heading">we do flowers right</h2>
+      </div>
     </section>
     <section id="about">
-<div class="wrapper">
-    <img class="abt-img" src="./images/gardener.jpg" alt="gardener" height="200px" width="150px"/>
-    <div class="text-box">
-    <h4 class="abt-heading">All flowers are grown and arranged by expert gardeners</h4>
-    <p class="abt-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at temporibus cupiditate, dolorum quia dolor suscipit earum odio deleniti provident aspernatur sapiente minima qui nobis voluptas sequi aliquam accusamus quisquam.</p>
-    </div>
-</div>
-<div class="wrapper">
-    <img style="float:right;"class="abt-img" src="./images/flowers.jpg" alt="flowers" height="200px" width="150px"/>
-    <div class="text-box">
-    <h4 class="abt-heading">Flowers are locally sourced and in season</h4>
-    <p class="abt-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nostrum maxime perferendis et cum explicabo atque! Maxime odit repellat corrupti ratione qui dignissimos modi alias, nihil sunt explicabo, itaque voluptatum.</p>
-    </div>
-</div>
-<div class="wrapper">
-    <img class="abt-img" src="./images/wedding.jpg" alt="wedding" height="150px" width="200px"/>
-    <div class="text-box">
-    <h4 class="abt-heading">Catering for weddings and other events</h4>
-    <p class="abt-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur eum quibusdam maxime, vitae quos ex cupiditate doloremque tempore eaque laudantium itaque non facere aliquam debitis totam assumenda asperiores eius?</p>
-    </div>
-</div>
+      <div class="wrapper">
+        <img
+          class="abt-img"
+          src="./images/gardener.jpg"
+          alt="gardener"
+          height="200px"
+          width="150px"
+        />
+        <div class="text-box">
+          <h4 class="abt-heading">
+            All flowers are grown and arranged by expert gardeners
+          </h4>
+          <p class="abt-subheading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at
+            temporibus cupiditate, dolorum quia dolor suscipit earum odio
+            deleniti provident aspernatur sapiente minima qui nobis voluptas
+            sequi aliquam accusamus quisquam.
+          </p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <img
+          style="float: right"
+          class="abt-img"
+          src="./images/flowers.jpg"
+          alt="flowers"
+          height="200px"
+          width="150px"
+        />
+        <div class="text-box">
+          <h4 class="abt-heading">Flowers are locally sourced and in season</h4>
+          <p class="abt-subheading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            nostrum maxime perferendis et cum explicabo atque! Maxime odit
+            repellat corrupti ratione qui dignissimos modi alias, nihil sunt
+            explicabo, itaque voluptatum.
+          </p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <img
+          class="abt-img"
+          src="./images/wedding.jpg"
+          alt="wedding"
+          height="150px"
+          width="200px"
+        />
+        <div class="text-box">
+          <h4 class="abt-heading">Catering for weddings and other events</h4>
+          <p class="abt-subheading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            pariatur eum quibusdam maxime, vitae quos ex cupiditate doloremque
+            tempore eaque laudantium itaque non facere aliquam debitis totam
+            assumenda asperiores eius?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <form action="">
+        <div class="title">
+          <h2>Contact</h2>
+        </div>
+        <div class="half">
+          <div class="item">
+            <label for="email">email</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="item">
+            <label for="name">name</label>
+            <input type="text" id="name" />
+          </div>
+        </div>
+        <div class="full">
+          <label for="message">meassage</label>
+          <textarea name="" id="message"></textarea>
+        </div>
+        <div class="action">
+          <input type="submit" value="send message" />
+          <input type="reset" value="reset" />
+        </div>
+        <div class="icon">
+          <a><svg xmlns="http://www.w3.org/2000/svg" class="m-2" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" class="m-2" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" class="m-2" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" class="m-2" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg></a>
+        </div>
+      </form>
     </section>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
