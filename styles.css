@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -23,12 +22,12 @@ body {
   background-position: center;
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: lighten;
+  background-attachment: fixed;
 }
 
 nav {
   background-color: rgb(124, 200, 91);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 nav ul {
@@ -138,6 +137,142 @@ h1 {
   border: outset 3px rgb(161, 228, 132);
   margin: 10px;
   float: left;
+}
+
+#contact {
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: josefin sans, sans-serif;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  min-width: 100%;
+}
+
+.icon a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  background-color: rgba(252, 156, 225, 0.5);
+  width: 640px;
+  margin: 50px auto;
+  padding: 55px 30px;
+  max-width: 97%;
+}
+
+form .title h2 {
+  letter-spacing: 6px;
+  border-bottom: 1px solid rgb(124, 200, 91);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+form .half {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input {
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full {
+  margin-bottom: 24px;
+}
+
+form .full textarea {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+}
+
+form .action {
+  margin-bottom: 32px;
+}
+
+form .action input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+font .action input[type="submit"] {
+  background: white;
+  color: black;
+}
+
+form .icon a {
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .half .item input:focus,
+form .full textarea:focus,
+form .action input[type="reset"]:hover,
+form .icon a:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 400px) {
+  form .half {
+    flex-direction: column;
+  }
+
+  form .half .item {
+    width: 100%;
+  }
+
+  form .action {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .action input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 
 /* changing font families */
